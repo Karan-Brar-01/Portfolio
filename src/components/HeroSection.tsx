@@ -189,7 +189,7 @@ export default function HeroSection() {
       {/* Main content */}
       <div
         ref={contentRef}
-        className="relative z-10 flex flex-col items-center text-center w-full max-w-[1200px] mx-auto px-8 gap-5"
+        className="relative z-10 flex flex-col items-center text-center w-full max-w-[1200px] mx-auto px-4 md:px-8 gap-4 md:gap-5"
         style={{ willChange: "transform" }}
       >
         {/* CGPA badge */}

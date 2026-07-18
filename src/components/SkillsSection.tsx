@@ -94,7 +94,7 @@ export default function SkillsSection() {
         aria-hidden="true"
       />
 
-      <div className="py-32 w-full max-w-[1200px] mx-auto px-8 relative">
+      <div className="py-16 md:py-32 w-full max-w-[1200px] mx-auto px-4 md:px-8 relative">
 
         {/* ── Section header ──────────────────────────────── */}
         <div className="sk-header flex items-end justify-between mb-20">
@@ -164,15 +164,15 @@ export default function SkillsSection() {
         </div>
 
         {/* ── Data Science & ML ───────────────────────────── */}
-        <div className="mb-48 ds-chips-row">
-          <p className="text-[11px] tracking-[0.35em] uppercase mb-16" style={{ color: "var(--text-muted)" }}>
+        <div className="mb-24 md:mb-48 ds-chips-row">
+          <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase mb-8 md:mb-16" style={{ color: "var(--text-muted)" }}>
             Data Science &amp; Machine Learning
           </p>
-          <div className="flex flex-wrap gap-10">
+          <div className="flex flex-wrap gap-4 md:gap-10">
             {ds.items.map((item) => (
               <span
                 key={item}
-                className="ds-chip text-2xl font-semibold tracking-wide px-14 py-7 rounded-[2rem] cursor-default"
+                className="ds-chip text-base md:text-2xl font-semibold tracking-wide px-6 py-4 md:px-14 md:py-7 rounded-2xl md:rounded-[2rem] cursor-default"
                 style={{
                   background: `${ds.accent}12`,
                   border: `1px solid ${ds.accent}30`,
@@ -199,15 +199,15 @@ export default function SkillsSection() {
         </div>
 
         {/* ── Backend & Tools ─────────────────────────────── */}
-        <div className="mb-48 be-chips-row">
-          <p className="text-[11px] tracking-[0.35em] uppercase mb-16" style={{ color: "var(--text-muted)" }}>
+        <div className="mb-24 md:mb-48 be-chips-row">
+          <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase mb-8 md:mb-16" style={{ color: "var(--text-muted)" }}>
             Backend &amp; Tools
           </p>
-          <div className="flex flex-wrap gap-10">
+          <div className="flex flex-wrap gap-4 md:gap-10">
             {be.items.map((item) => (
               <span
                 key={item}
-                className="be-chip text-2xl font-semibold tracking-wide px-14 py-7 rounded-[2rem] cursor-default"
+                className="be-chip text-base md:text-2xl font-semibold tracking-wide px-6 py-4 md:px-14 md:py-7 rounded-2xl md:rounded-[2rem] cursor-default"
                 style={{
                   background: `${be.accent}12`,
                   border: `1px solid ${be.accent}30`,
@@ -305,24 +305,24 @@ export default function SkillsSection() {
 
           {/* Coursework — clean list format */}
           <div className="coursework-list">
-            <p className="text-[11px] tracking-[0.35em] uppercase mb-16" style={{ color: "var(--text-muted)" }}>
+            <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase mb-8 md:mb-16" style={{ color: "var(--text-muted)" }}>
               Coursework
             </p>
             <ul className="space-y-10">
               {cw.items.map((item, i) => (
                 <li
                   key={item}
-                  className="cw-item flex items-center gap-8"
+                  className="cw-item flex items-center gap-4 md:gap-8"
                   style={{ color: "var(--text-secondary)" }}
                 >
                   <span
-                    className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-lg font-bold"
+                    className="flex-shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl flex items-center justify-center text-sm md:text-lg font-bold"
                     style={{ background: `${cw.accent}15`, border: `1px solid ${cw.accent}30`, color: cw.accent }}
                     aria-hidden="true"
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-2xl font-semibold tracking-wide">{item}</span>
+                  <span className="text-base md:text-2xl font-semibold tracking-wide">{item}</span>
                 </li>
               ))}
             </ul>
@@ -330,14 +330,14 @@ export default function SkillsSection() {
 
           {/* Interests */}
           <div className="interests-row">
-            <p className="text-[11px] tracking-[0.35em] uppercase mb-16" style={{ color: "var(--text-muted)" }}>
+            <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase mb-8 md:mb-16" style={{ color: "var(--text-muted)" }}>
               Interests
             </p>
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-3 md:gap-6">
               {interests.map((interest) => (
                 <span
                   key={interest}
-                  className="interest-pill text-xl font-medium px-10 py-5 rounded-full"
+                  className="interest-pill text-sm md:text-xl font-medium px-5 py-2.5 md:px-10 md:py-5 rounded-full"
                   style={{
                     background: "rgba(255,255,255,0.04)",
                     border: "1px solid rgba(255,255,255,0.1)",

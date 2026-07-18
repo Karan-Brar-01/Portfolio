@@ -101,7 +101,7 @@ export default function AboutSection() {
         aria-hidden="true"
       />
 
-      <div className="py-32 w-full max-w-[1200px] mx-auto px-8 relative">
+      <div className="py-16 md:py-32 w-full max-w-[1200px] mx-auto px-4 md:px-8 relative">
 
         {/* ── Header ────────────────────────────────────── */}
         <div className="ab-header flex items-end justify-between mb-20">
@@ -137,7 +137,7 @@ export default function AboutSection() {
 
 
         {/* ── Two columns: Education + Experience ───────── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
           {/* Education timeline */}
           <div>

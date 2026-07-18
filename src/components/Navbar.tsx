@@ -115,7 +115,7 @@ export default function Navbar() {
         <button
           id="nav-logo"
           onClick={() => scrollTo("hero")}
-          className="px-3.5 py-1.5 rounded-full text-sm font-black tracking-widest transition-colors duration-200"
+          className="px-2 md:px-3.5 py-1 md:py-1.5 rounded-full text-xs md:text-sm font-black tracking-widest transition-colors duration-200"
           style={{
             fontFamily: "var(--font-display)",
             color: "var(--text-primary)",
@@ -145,7 +145,7 @@ export default function Navbar() {
               onClick={() => scrollTo(id)}
               onMouseEnter={() => setHovered(id)}
               onMouseLeave={() => setHovered(null)}
-              className="relative px-3.5 py-1.5 rounded-full text-[11px] tracking-[0.15em] uppercase transition-all duration-200"
+              className="relative px-2 md:px-3.5 py-1 md:py-1.5 rounded-full text-[9px] md:text-[11px] tracking-[0.15em] uppercase transition-all duration-200"
               style={{
                 color: isActive
                   ? "var(--text-primary)"

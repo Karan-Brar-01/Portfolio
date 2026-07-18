@@ -80,7 +80,7 @@ export default function ContactSection() {
       style={{ background: "var(--bg-surface)", minHeight: "100vh" }}
       aria-labelledby="contact-heading"
     >
-      <div className="flex flex-col justify-between pt-28 w-full max-w-[1200px] mx-auto px-8" style={{ minHeight: "100vh" }}>
+      <div className="flex flex-col justify-between pt-28 w-full max-w-[1200px] mx-auto px-4 md:px-8" style={{ minHeight: "100vh" }}>
       {/* ── Top border ────────────────────────────────── */}
       <div
         className="absolute top-0 left-10 md:left-16 right-10 md:right-16 h-px"

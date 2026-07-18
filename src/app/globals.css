@@ -20,8 +20,16 @@
   --text-secondary: #a0a0c0;
   --text-muted: #52527a;
 
-  /* Grid */
+  /* Grid & Spacing */
   --grid-line: rgba(124, 58, 237, 0.08);
+  --container-px: 1rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-px: 2rem;
+  }
+}
 
   /* Typography */
   --font-sans: var(--font-inter), system-ui, sans-serif;
