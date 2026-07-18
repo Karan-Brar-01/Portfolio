@@ -155,7 +155,7 @@ export default function AboutSection() {
 
               <div className="space-y-0">
                 {education.map((edu) => (
-                  <div key={edu.id} className="timeline-item relative pb-10 last:pb-0 pl-7 md:pl-12">
+                  <div key={edu.id} className="timeline-item relative pb-10 last:pb-0" style={{ paddingLeft: "var(--timeline-pl, 2rem)" }}>
                     {/* Dot */}
                     <div
                       className="absolute top-2 w-3.5 h-3.5 rounded-full border-2"
