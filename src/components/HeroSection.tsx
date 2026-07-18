@@ -209,22 +209,21 @@ export default function HeroSection() {
 
         {/* Name heading */}
         <h1
-          className="hero-heading font-display font-black leading-[0.88] tracking-tight select-none"
+          className="hero-heading font-display font-black leading-[0.88] tracking-tight select-none text-[clamp(2.2rem,11vw,4.5rem)] md:text-[clamp(4.5rem,13.5vw,14rem)]"
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(4.5rem, 13.5vw, 14rem)",
             willChange: "transform",
           }}
           aria-label="Karanpreet Singh"
         >
-          <span ref={line1Ref} className="block" style={{ overflow: "hidden" }}>
+          <span ref={line1Ref} className="block whitespace-nowrap" style={{ overflow: "hidden" }}>
             {"KARANPREET".split("").map((char, i) => (
               <span key={i} className="wi" style={{ display: "inline-block", color: "var(--text-primary)", transform: "translateY(115%)", letterSpacing: "-0.02em" }}>
                 {char}
               </span>
             ))}
           </span>
-          <span ref={line2Ref} className="block" style={{ overflow: "hidden" }}>
+          <span ref={line2Ref} className="block whitespace-nowrap" style={{ overflow: "hidden" }}>
             {"SINGH".split("").map((char, i) => (
               <span key={i} className="wi text-gradient" style={{ display: "inline-block", transform: "translateY(115%)", letterSpacing: "-0.02em" }}>
                 {char}
