@@ -155,7 +155,7 @@ export default function AboutSection() {
 
               <div className="space-y-0">
                 {education.map((edu) => (
-                  <div key={edu.id} className="timeline-item relative pb-10 last:pb-0" style={{ paddingLeft: "3rem" }}>
+                  <div key={edu.id} className="timeline-item relative pb-10 last:pb-0 pl-7 md:pl-12">
                     {/* Dot */}
                     <div
                       className="absolute top-2 w-3.5 h-3.5 rounded-full border-2"
@@ -169,8 +169,8 @@ export default function AboutSection() {
                     />
 
                     <div
-                      className="glass rounded-2xl relative z-10"
-                      style={{ border: "1px solid rgba(124,58,237,0.12)", padding: "1.5rem 1.75rem" }}
+                      className="glass rounded-2xl relative z-10 p-5 md:p-6 md:px-7"
+                      style={{ border: "1px solid rgba(124,58,237,0.12)" }}
                     >
                       <div className="flex items-start justify-between gap-4 mb-3">
                         <div className="space-y-1">
@@ -222,8 +222,8 @@ export default function AboutSection() {
             {experience.map((exp) => (
               <div
                 key={exp.id}
-                className="exp-card glass rounded-2xl relative overflow-hidden"
-                style={{ border: `1px solid ${exp.accent}22`, padding: "2rem 2.25rem" }}
+                className="exp-card glass rounded-2xl relative overflow-hidden p-6 md:p-8 md:px-9"
+                style={{ border: `1px solid ${exp.accent}22` }}
               >
                 {/* Glow */}
                 <div
