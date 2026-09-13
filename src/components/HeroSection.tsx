@@ -209,7 +209,7 @@ export default function HeroSection() {
 
         {/* Name heading */}
         <h1
-          className="hero-heading font-display font-black leading-[0.88] tracking-tight select-none text-[clamp(1.5rem,9vw,4.5rem)] md:text-[clamp(4.5rem,13.5vw,14rem)]"
+          className="hero-heading font-display font-black leading-[0.88] tracking-tight select-none text-6xl md:text-8xl"
           style={{
             fontFamily: "var(--font-display)",
             willChange: "transform",

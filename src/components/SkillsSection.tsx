@@ -104,15 +104,15 @@ export default function SkillsSection() {
             </p>
             <h2
               id="skills-heading"
-              className="font-display font-black leading-none"
-              style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.5rem, 6vw, 5rem)", color: "var(--text-primary)" }}
+              className="font-display font-black leading-none text-4xl md:text-5xl"
+              style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
             >
               Skills
             </h2>
           </div>
           <span
-            className="font-display font-black pb-1 select-none"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3rem, 8vw, 7rem)", color: "rgba(124,58,237,0.1)", lineHeight: 1 }}
+            className="font-display font-black pb-1 select-none text-5xl md:text-7xl"
+            style={{ fontFamily: "var(--font-display)", color: "rgba(124,58,237,0.1)", lineHeight: 1 }}
             aria-hidden="true"
           >
             04
@@ -149,8 +149,8 @@ export default function SkillsSection() {
                 aria-label={name}
               >
                 <span
-                  className="font-display font-black"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3.5rem, 6vw, 4.5rem)", lineHeight: 1, color: accent }}
+                  className="font-display font-black text-5xl md:text-6xl"
+                  style={{ fontFamily: "var(--font-display)", lineHeight: 1, color: accent }}
                   aria-hidden="true"
                 >
                   {initial}
@@ -252,8 +252,8 @@ export default function SkillsSection() {
               </span>
 
               <h3
-                className="font-display font-bold leading-tight"
-                style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.1rem, 2vw, 1.5rem)", color: "var(--text-primary)" }}
+                className="font-display font-bold leading-tight text-xl md:text-2xl"
+                style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
               >
                 {dsaHighlight.title}
               </h3>
@@ -286,8 +286,8 @@ export default function SkillsSection() {
                 }}
               >
                 <span
-                  className="font-display font-black text-gradient"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3rem)", lineHeight: 1 }}
+                  className="font-display font-black text-gradient text-4xl md:text-5xl"
+                  style={{ fontFamily: "var(--font-display)", lineHeight: 1 }}
                   aria-label="Grade S"
                 >
                   {dsaHighlight.grade}

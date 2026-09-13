@@ -111,15 +111,15 @@ export default function AboutSection() {
             </p>
             <h2
               id="about-heading"
-              className="font-display font-black leading-none"
-              style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.5rem, 6vw, 5rem)", color: "var(--text-primary)" }}
+              className="font-display font-black leading-none text-4xl md:text-5xl"
+              style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
             >
               About
             </h2>
           </div>
           <span
-            className="font-display font-black pb-1 select-none"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3rem, 8vw, 7rem)", color: "rgba(6,182,212,0.1)", lineHeight: 1 }}
+            className="font-display font-black pb-1 select-none text-5xl md:text-7xl"
+            style={{ fontFamily: "var(--font-display)", color: "rgba(6,182,212,0.1)", lineHeight: 1 }}
             aria-hidden="true"
           >
             05
@@ -197,8 +197,8 @@ export default function AboutSection() {
                             {edu.scoreLabel}
                           </span>
                           <span
-                            className="stat-value font-display font-black text-gradient"
-                            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", lineHeight: 1 }}
+                            className="stat-value font-display font-black text-gradient text-3xl md:text-4xl"
+                            style={{ fontFamily: "var(--font-display)", lineHeight: 1 }}
                             data-target={edu.score}
                           >
                             0

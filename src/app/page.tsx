@@ -10,14 +10,14 @@ export default function Home() {
       {/* Phase 2 — Hero: pinned, clip-path glow reveal */}
       <HeroSection />
 
+      {/* Phase 4 — About: stat counters, education timeline, experience */}
+      <AboutSection />
+
       {/* Phase 3 — Projects: pinned, horizontal card scroll */}
       <ProjectsSection />
 
       {/* Phase 4 — Skills: animated language cards, DSA Grade-S feature */}
       <SkillsSection />
-
-      {/* Phase 4 — About: stat counters, education timeline, experience */}
-      <AboutSection />
 
       {/* Phase 4 — Contact: heading reveal, email CTA, footer */}
       <ContactSection />

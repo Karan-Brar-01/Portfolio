@@ -105,10 +105,9 @@ export default function ProjectsSection() {
           </p>
           <h2
             id="projects-heading"
-            className="font-display font-black leading-none"
+            className="font-display font-black leading-none text-4xl md:text-5xl"
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
               color: "var(--text-primary)",
             }}
           >
@@ -124,10 +123,9 @@ export default function ProjectsSection() {
         >
           <span
             ref={counterRef}
-            className="font-display font-black tabular-nums"
+            className="font-display font-black tabular-nums text-4xl md:text-5xl"
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(2rem, 5vw, 4rem)",
               color: "var(--text-primary)",
               lineHeight: 1,
             }}
@@ -264,10 +262,9 @@ function ProjectCard({
       {/* ── Top: number + category badge ─────────────────── */}
       <div className="flex items-start justify-between relative z-10">
         <span
-          className="font-display font-black select-none"
+          className="font-display font-black select-none text-7xl md:text-8xl"
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(3.5rem, 8vw, 6.5rem)",
             lineHeight: 1,
             color: `${project.accentAlpha}0.15)`,
             letterSpacing: "-0.04em",
@@ -291,10 +288,9 @@ function ProjectCard({
       {/* ── Middle: title + bullets ───────────────────────── */}
       <div className="flex flex-col gap-5 flex-1 justify-center py-3 relative z-10">
         <h3
-          className="font-display font-bold leading-[1.1]"
+          className="font-display font-bold leading-[1.1] text-2xl md:text-3xl"
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(1.35rem, 2.4vw, 1.9rem)",
             color: "var(--text-primary)",
             whiteSpace: "pre-line",
           }}

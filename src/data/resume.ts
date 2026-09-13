@@ -135,7 +135,7 @@ export const skillGroups = [
 ] as const;
 
 export const dsaHighlight = {
-  title: "Data Structures & Algorithms",
+  title: "Core CS Subjects",
   grade: "S",
   gradeDescription: "Exceptional — earned 'S' grades across core CS subjects",
   description:
@@ -159,7 +159,7 @@ export const interests = [
 
 export const projects = [
   {
-    id: "groundtruth",
+    id: "01",
     title: "GROUNDTRUTH\nExplainable System",
     category: "Data Mining · Analytics",
     tags: ["Python", "PostgreSQL", "Next.js", "Supabase"],
@@ -171,7 +171,7 @@ export const projects = [
     accentAlpha: "rgba(239,68,68,",
   },
   {
-    id: "clinicalpulse",
+    id: "02",
     title: "ClinicalPulse\nMultimodal Triage",
     category: "HealthTech · AI",
     tags: ["FastAPI", "SciPy", "Librosa", "LLMs"],
@@ -183,7 +183,7 @@ export const projects = [
     accentAlpha: "rgba(16,185,129,",
   },
   {
-    id: "01",
+    id: "03",
     title: "Graph RAG\nKnowledge System",
     category: "AI · Knowledge Graphs",
     tags: ["Neo4j", "LangChain", "LLMs", "Python"],
@@ -196,7 +196,7 @@ export const projects = [
     accentAlpha: "rgba(124,58,237,",
   },
   {
-    id: "02",
+    id: "04",
     title: "Scalable ML\nInference Service",
     category: "Backend · MLOps",
     tags: ["FastAPI", "Docker", "Cloud", "Python"],
@@ -209,7 +209,7 @@ export const projects = [
     accentAlpha: "rgba(6,182,212,",
   },
   {
-    id: "03",
+    id: "05",
     title: "DocuMind\nRAG System",
     category: "AI · NLP",
     tags: ["LangChain", "Gemini API", "ChromaDB", "Streamlit"],
@@ -222,7 +222,7 @@ export const projects = [
     accentAlpha: "rgba(16,185,129,",
   },
   {
-    id: "04",
+    id: "06",
     title: "LingoSQL",
     category: "NLP · Databases",
     tags: ["Python", "NLP", "SQL", "NLU"],
@@ -234,7 +234,7 @@ export const projects = [
     accentAlpha: "rgba(245,158,11,",
   },
   {
-    id: "05",
+    id: "07",
     title: "Data Analysis &\nPrediction System",
     category: "Data Science · ML",
     tags: ["Scikit-learn", "Pandas", "Seaborn", "KNN"],
@@ -247,7 +247,7 @@ export const projects = [
     accentAlpha: "rgba(244,63,94,",
   },
   {
-    id: "06",
+    id: "08",
     title: "DSA Visualizer",
     category: "Tools · Education",
     tags: ["Algorithms", "Data Structures", "Visualisation", "Interactive"],
