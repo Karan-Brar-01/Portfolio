@@ -13,7 +13,7 @@ export const personal = {
   linkedin: "https://www.linkedin.com/in/karan-brar-377b91366/",
   location: "Punjab, India",
   tagline: "Data Scientist · ML Engineer · Builder",
-  bio: "B.Tech Data Science student at NIT Jalandhar with a CGPA of 9.13. I build intelligent systems at the intersection of AI, data, and software engineering — from Graph RAG pipelines to production ML APIs. Active competitive programmer with a grade-S foundation in algorithms and data structures.",
+  bio: "B.Tech Data Science student at NIT Jalandhar with a CGPA of 9.12 (Recent SGPAs: 9.56, 9.64). I build intelligent systems at the intersection of AI, data, and software engineering — from Graph RAG pipelines to production ML APIs. Active competitive programmer with a grade-S foundation in algorithms and data structures.",
   available: true,
 };
 
@@ -23,7 +23,7 @@ export const education = [
     institution: "National Institute of Technology, Jalandhar",
     degree: "B.Tech — Data Science",
     period: "2024 – 2028",
-    score: "9.13",
+    score: "9.12",
     scoreLabel: "CGPA",
     scoreUnit: "/ 10",
     current: true,
@@ -52,6 +52,33 @@ export const education = [
 
 export const experience = [
   {
+    id: "handshake",
+    company: "Handshake AI – Project Dynamo",
+    role: "AI Model Evaluator",
+    period: "Jul 2026 – Present",
+    location: "Remote",
+    current: true,
+    bullets: [
+      "Evaluate frontier coding models including GPT-5.6 and Claude Opus 4.8 on repository-level debugging, feature implementation, code reasoning, and multi-step software-engineering tasks.",
+      "Design challenging benchmarks over multi-file codebases; build reproducible Docker environments, validation suites, and deployment workflows.",
+      "Analyze model failure modes and strengthen edge cases, task specifications, and test coverage to improve benchmark reliability.",
+    ],
+    accent: "#ef4444",
+  },
+  {
+    id: "airdawg",
+    company: "AirDawg Labs",
+    role: "AI Systems Evaluator",
+    period: "Feb 2026 – Present",
+    location: "Remote",
+    current: true,
+    bullets: [
+      "Delivered 210+ accepted software-engineering evaluation tasks by converting complex pull requests from real-world open-source repositories into deterministic multi-file coding challenges.",
+      "Engineered containerized sandboxes, automated validation pipelines, and Python test suites covering implementation correctness, regressions, edge cases, and expected behavior.",
+    ],
+    accent: "#3b82f6",
+  },
+  {
     id: "prodigy",
     company: "Prodigy InfoTech",
     role: "Data Science Intern",
@@ -68,29 +95,36 @@ export const experience = [
 
 export const langCards = [
   { name: "Python", initial: "Py",  accent: "#7c3aed" },
-  { name: "C++",    initial: "C++", accent: "#06b6d4" },
-  { name: "C",      initial: "C",   accent: "#10b981" },
+  { name: "C++ / C", initial: "C++", accent: "#06b6d4" },
+  { name: "TypeScript", initial: "TS", accent: "#3b82f6" },
   { name: "SQL",    initial: "SQL", accent: "#f59e0b" },
 ] as const;
 
 export const skillGroups = [
   {
     id: "datascience",
-    label: "Data Science & ML",
-    items: ["Pandas", "NumPy", "Scikit-learn", "Seaborn", "NLP", "RAG Pipelines", "Knowledge Graphs"],
+    label: "Data Science & AI",
+    items: ["NumPy", "Pandas", "Scikit-learn", "SciPy", "Librosa", "NLP", "LLM Evaluation", "Prompt Engineering"],
     accent: "#06b6d4",
   },
   {
     id: "backend",
-    label: "Backend & Tools",
-    items: ["FastAPI", "Docker", "Git", "VS Code", "LaTeX", "Postman", "Neo4j"],
+    label: "Backend & Engineering",
+    items: ["FastAPI", "REST APIs", "Docker", "Git/GitHub", "Supabase", "Vercel", "Streamlit", "Pytest", "Postman"],
     accent: "#10b981",
   },
   {
+    id: "databases",
+    label: "Databases & Tools",
+    items: ["PostgreSQL", "PostGIS", "Neo4j", "ChromaDB"],
+    accent: "#ef4444",
+  },
+  {
     id: "coursework",
-    label: "Coursework",
+    label: "Core Competencies",
     items: [
-      "Database Management Systems",
+      "Data Structures & Algorithms",
+      "Design & Analysis of Algorithms",
       "Object Oriented Programming",
       "Computer Organization",
       "System Design",
@@ -103,9 +137,9 @@ export const skillGroups = [
 export const dsaHighlight = {
   title: "Data Structures & Algorithms",
   grade: "S",
-  gradeDescription: "Exceptional — top coursework grade",
+  gradeDescription: "Exceptional — earned 'S' grades across core CS subjects",
   description:
-    "Active competitive programmer with deep expertise in algorithmic problem-solving, time/space complexity analysis, and real-world implementation of advanced data structures.",
+    "Active competitive programmer (Ranked 1st in Speed Quant Challenge, Utkansh '25). Advanced to Round 3 of Flipkart GRID 8.0 and solved 500+ LeetCode problems with deep expertise in algorithmic problem-solving and time/space complexity analysis.",
   topics: [
     "Arrays & Strings",
     "Trees & Graphs",
@@ -124,6 +158,30 @@ export const interests = [
 ];
 
 export const projects = [
+  {
+    id: "groundtruth",
+    title: "GROUNDTRUTH\nExplainable System",
+    category: "Data Mining · Analytics",
+    tags: ["Python", "PostgreSQL", "Next.js", "Supabase"],
+    description: [
+      "Engineered an explainable infrastructure analytics platform with an 8-stage evidence-mining pipeline.",
+      "Designed a transparent 5-view Reality Gap Score and PostGIS architecture for auditable provenance."
+    ],
+    accent: "#ef4444",
+    accentAlpha: "rgba(239,68,68,",
+  },
+  {
+    id: "clinicalpulse",
+    title: "ClinicalPulse\nMultimodal Triage",
+    category: "HealthTech · AI",
+    tags: ["FastAPI", "SciPy", "Librosa", "LLMs"],
+    description: [
+      "Built a FastAPI backend combining adaptive LLM intake, optical rPPG vitals, and cough-acoustic analysis.",
+      "Implemented a 3-method rPPG pipeline using Welch PSD + time-domain fusion for 45-180 BPM estimation."
+    ],
+    accent: "#10b981",
+    accentAlpha: "rgba(16,185,129,",
+  },
   {
     id: "01",
     title: "Graph RAG\nKnowledge System",
